@@ -1,0 +1,258 @@
+﻿@model Data.Models.t_user
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>t_user</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.USER_TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USER_TYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.birthday)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.birthday)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.countryOfResidence)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.countryOfResidence)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emailActivationToken)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emailActivationToken)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isBanned)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isBanned)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.complaintPercentage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.complaintPercentage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gamificationScore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gamificationScore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sellerBadges)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sellerBadges)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sellerDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sellerDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sellerIsSuspiciousFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sellerIsSuspiciousFlag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sellerLogo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sellerLogo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalSales)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalSales)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.canAddAdvertisement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.canAddAdvertisement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.canExportData)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.canExportData)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.canManageCategories)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.canManageCategories)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.canManageManagers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.canManageManagers)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.canModerateSellersAndBuyers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.canModerateSellersAndBuyers)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.accountBalance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.accountBalance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.addressCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.addressCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.addressLine1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.addressLine1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.addressLine2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.addressLine2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.buyerBadges)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.buyerBadges)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.iSMale)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.iSMale)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalSpending)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalSpending)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customizedAds_customizedAdsId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customizedAds_customizedAdsId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.youBayUserId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

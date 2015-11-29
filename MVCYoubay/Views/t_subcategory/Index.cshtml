@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Data.Models.t_subcategory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.assistantAvatarImage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.categoryDisplayPriority)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.categoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isActive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subcategoryAttributesAndTypes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.category_categoryId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.assistantAvatarImage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.categoryDisplayPriority)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.categoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isActive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subcategoryAttributesAndTypes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.category_categoryId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.subcategoryId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.subcategoryId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.subcategoryId })
+        </td>
+    </tr>
+}
+
+</table>

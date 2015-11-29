@@ -1,0 +1,74 @@
+﻿@model Data.Models.t_assistantitems
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>t_assistantitems</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.affirmativeAnswer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.affirmativeAnswer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.affirmativeAnswerQuery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.affirmativeAnswerQuery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.negativeAnswer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.negativeAnswer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.negativeAnswerQuery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.negativeAnswerQuery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.questionDisplayPriority)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.questionDisplayPriority)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.questionText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.questionText)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subcategory_subcategoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcategory_subcategoryId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.assistantItemsId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,104 @@
+﻿@model Data.Models.t_product
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>t_product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.isDisabledByAdmin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isDisabledByAdmin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isDisabledBySeller)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isDisabledBySeller)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.quantityAvailable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quantityAvailable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sellerPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sellerPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subcategoryAttributesAndValues)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcategoryAttributesAndValues)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.seller_youBayUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.seller_youBayUserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subcategory_subcategoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcategory_subcategoryId)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

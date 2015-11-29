@@ -1,0 +1,106 @@
+﻿@model Data.Models.t_orderandreview
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>t_orderandreview</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.t_product.productDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.t_product.productDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.theDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.theDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.buyerHasLeftAReview)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.buyerHasLeftAReview)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hasFiledComplaint)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hasFiledComplaint)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.initialMessageToSeller)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.initialMessageToSeller)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.oderFulfilledBySeller)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.oderFulfilledBySeller)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.orderDeliveredToBuyer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.orderDeliveredToBuyer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pricePaidByBuyer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pricePaidByBuyer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productRating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productRating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reviewText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reviewText)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reviewTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reviewTitle)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

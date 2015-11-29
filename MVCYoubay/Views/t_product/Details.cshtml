@@ -1,0 +1,98 @@
+﻿@model Data.Models.t_product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>t_product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.isDisabledByAdmin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isDisabledByAdmin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isDisabledBySeller)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isDisabledBySeller)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.quantityAvailable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quantityAvailable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sellerPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sellerPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subcategoryAttributesAndValues)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcategoryAttributesAndValues)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.seller_youBayUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.seller_youBayUserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subcategory_subcategoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcategory_subcategoryId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.productId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,96 @@
+﻿@model Data.Models.t_producthistory
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>t_producthistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.historyDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.historyDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productImageHistory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productImageHistory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productMainDescriptionHistory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productMainDescriptionHistory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productNameHistory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productNameHistory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productShortDescriptionHistory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productShortDescriptionHistory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.quantityAvailableHistory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quantityAvailableHistory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sellerPriceHistory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sellerPriceHistory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subcategoryAdditionalValuesHistory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcategoryAdditionalValuesHistory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_productId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_productId)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,66 @@
+﻿@model Data.Models.t_subcategory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>t_subcategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.assistantAvatarImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.assistantAvatarImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.categoryDisplayPriority)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categoryDisplayPriority)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.categoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subcategoryAttributesAndTypes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcategoryAttributesAndTypes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category_categoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category_categoryId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.subcategoryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Data.Models.t_assistantitems>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.affirmativeAnswer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.affirmativeAnswerQuery)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.negativeAnswer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.negativeAnswerQuery)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.questionDisplayPriority)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.questionText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subcategory_subcategoryId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.affirmativeAnswer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.affirmativeAnswerQuery)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.negativeAnswer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.negativeAnswerQuery)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.questionDisplayPriority)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.questionText)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subcategory_subcategoryId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.assistantItemsId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.assistantItemsId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.assistantItemsId })
+        </td>
+    </tr>
+}
+
+</table>

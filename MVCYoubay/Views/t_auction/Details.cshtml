@@ -1,0 +1,58 @@
+﻿@model Data.Models.t_auction
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>t_auction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.currentPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.currentPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.endTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.endTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.startTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.startTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.buyer_youBayUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.buyer_youBayUserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_productId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_productId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.auctionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Data.Models.t_customizedads>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.customizedMessage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.endDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.importanceScore)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isACustomizedMarketingAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isAPurchasedAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.startDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_productId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.customizedMessage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.endDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.importanceScore)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isACustomizedMarketingAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isAPurchasedAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.startDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product_productId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.customizedAdsId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.customizedAdsId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.customizedAdsId })
+        </td>
+    </tr>
+}
+
+</table>

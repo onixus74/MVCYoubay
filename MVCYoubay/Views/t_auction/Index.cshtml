@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Data.Models.t_auction>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.currentPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.endTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.startTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.buyer_youBayUserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_productId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.currentPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.endTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.startTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.buyer_youBayUserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product_productId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.auctionId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.auctionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.auctionId })
+        </td>
+    </tr>
+}
+
+</table>

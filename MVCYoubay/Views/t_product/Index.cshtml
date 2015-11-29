@@ -1,0 +1,87 @@
+﻿@model IEnumerable<Data.Models.t_product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.isDisabledByAdmin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isDisabledBySeller)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productImage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantityAvailable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sellerPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subcategoryAttributesAndValues)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.seller_youBayUserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subcategory_subcategoryId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.isDisabledByAdmin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isDisabledBySeller)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productImage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantityAvailable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sellerPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subcategoryAttributesAndValues)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.seller_youBayUserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subcategory_subcategoryId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.productId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.productId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.productId })
+        </td>
+    </tr>
+}
+
+</table>

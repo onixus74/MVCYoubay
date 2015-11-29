@@ -1,0 +1,72 @@
+﻿@model Data.Models.t_subcategory
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>t_subcategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.assistantAvatarImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.assistantAvatarImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.categoryDisplayPriority)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categoryDisplayPriority)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.categoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subcategoryAttributesAndTypes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcategoryAttributesAndTypes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category_categoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category_categoryId)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

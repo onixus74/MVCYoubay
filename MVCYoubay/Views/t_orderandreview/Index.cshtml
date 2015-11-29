@@ -1,0 +1,93 @@
+﻿@model IEnumerable<Data.Models.t_orderandreview>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.t_product.productDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.theDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.buyerHasLeftAReview)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hasFiledComplaint)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.initialMessageToSeller)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.oderFulfilledBySeller)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.orderDeliveredToBuyer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pricePaidByBuyer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productRating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.reviewText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.reviewTitle)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.t_product.productDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.theDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.buyerHasLeftAReview)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hasFiledComplaint)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.initialMessageToSeller)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.oderFulfilledBySeller)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.orderDeliveredToBuyer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pricePaidByBuyer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productRating)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.reviewText)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.reviewTitle)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

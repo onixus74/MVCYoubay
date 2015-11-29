@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Data.Models.t_specialpromotion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.dealDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dealDisabledByAdmin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.endDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.reductionPercentage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.startDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_productId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.dealDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dealDisabledByAdmin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.endDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.reductionPercentage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.startDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product_productId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.specialPromotionId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.specialPromotionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.specialPromotionId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,207 @@
+﻿@model IEnumerable<Data.Models.t_user>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.USER_TYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.birthday)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.countryOfResidence)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emailActivationToken)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.firstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isActive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isBanned)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.complaintPercentage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gamificationScore)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sellerBadges)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sellerDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sellerIsSuspiciousFlag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sellerLogo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totalSales)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.canAddAdvertisement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.canExportData)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.canManageCategories)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.canManageManagers)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.canModerateSellersAndBuyers)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accountBalance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.addressCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.addressLine1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.addressLine2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.buyerBadges)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.iSMale)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totalSpending)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.customizedAds_customizedAdsId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.USER_TYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.birthday)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.countryOfResidence)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emailActivationToken)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.firstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isActive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isBanned)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.complaintPercentage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gamificationScore)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sellerBadges)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sellerDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sellerIsSuspiciousFlag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sellerLogo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totalSales)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.canAddAdvertisement)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.canExportData)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.canManageCategories)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.canManageManagers)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.canModerateSellersAndBuyers)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accountBalance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.addressCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.addressLine1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.addressLine2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.buyerBadges)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.iSMale)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totalSpending)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.customizedAds_customizedAdsId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.youBayUserId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.youBayUserId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.youBayUserId })
+        </td>
+    </tr>
+}
+
+</table>

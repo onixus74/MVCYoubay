@@ -1,0 +1,66 @@
+﻿@model Data.Models.t_specialpromotion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>t_specialpromotion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dealDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dealDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dealDisabledByAdmin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dealDisabledByAdmin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.endDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.endDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reductionPercentage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reductionPercentage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.startDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.startDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_productId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_productId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.specialPromotionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
