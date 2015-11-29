@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Data.Models
+namespace MVCYoubay.Models
 {
     public partial class t_customizedads
     {

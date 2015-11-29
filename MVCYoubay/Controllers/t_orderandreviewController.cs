@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Data.Models;
 using MVCYoubay.Models;
 
 namespace MVCYoubay.Controllers

@@ -200,6 +200,7 @@
     <Compile Include="Models\t_specialpromotion.cs" />
     <Compile Include="Models\t_subcategory.cs" />
     <Compile Include="Models\t_user.cs" />
+    <Compile Include="Models\YoubayIdentityContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
