@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MVCYoubay.Models
+namespace Data.Models
 {
     public partial class t_orderandreview
     {

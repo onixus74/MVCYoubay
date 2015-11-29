@@ -1,22 +1,11 @@
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Security.Claims;
-using System.Threading.Tasks;
 
-namespace MVCYoubay.Models
+namespace Data.Models
 {
-    public partial class t_user : IdentityUser
+    public partial class t_user
     {
-        public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<t_user> manager)
-        {
-            // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
-            var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
-            // Add custom user claims here
-            return userIdentity;
-        }
         public t_user()
         {
             this.t_auction = new List<t_auction>();
@@ -28,17 +17,17 @@ namespace MVCYoubay.Models
 
         public string USER_TYPE { get; set; }
 
-        //[Key]
-        //public int youBayUserId { get; set; }
+        [Key]
+        public long youBayUserId { get; set; }
         public Nullable<System.DateTime> birthday { get; set; }
         public string countryOfResidence { get; set; }
-        //public string email { get; set; }
-        //public string emailActivationToken { get; set; }
+        public string email { get; set; }
+        public string emailActivationToken { get; set; }
         public string firstName { get; set; }
         public Nullable<bool> isActive { get; set; }
         public Nullable<bool> isBanned { get; set; }
         public string lastName { get; set; }
-        //public string phoneNumber { get; set; }
+        public string phoneNumber { get; set; }
         public Nullable<float> complaintPercentage { get; set; }
         public Nullable<float> gamificationScore { get; set; }
         public string sellerBadges { get; set; }
@@ -65,7 +54,5 @@ namespace MVCYoubay.Models
         public virtual ICollection<t_orderandreview> t_orderandreview { get; set; }
         public virtual ICollection<t_product> t_product { get; set; }
         public virtual ICollection<t_product> t_product1 { get; set; }
-
-
     }
 }

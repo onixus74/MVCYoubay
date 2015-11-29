@@ -19,26 +19,26 @@ namespace MVCYoubay.Models
         {
         }
 
-        public System.Data.Entity.DbSet<MVCYoubay.Models.t_assistantitems> t_assistantitems { get; set; }
+        public System.Data.Entity.DbSet<Data.Models.t_assistantitems> t_assistantitems { get; set; }
 
-        public System.Data.Entity.DbSet<MVCYoubay.Models.t_auction> t_auction { get; set; }
+        public System.Data.Entity.DbSet<Data.Models.t_auction> t_auction { get; set; }
 
-        public System.Data.Entity.DbSet<MVCYoubay.Models.t_category> t_category { get; set; }
+        public System.Data.Entity.DbSet<Data.Models.t_category> t_category { get; set; }
 
-        public System.Data.Entity.DbSet<MVCYoubay.Models.t_customizedads> t_customizedads { get; set; }
+        public System.Data.Entity.DbSet<Data.Models.t_customizedads> t_customizedads { get; set; }
 
-        public System.Data.Entity.DbSet<MVCYoubay.Models.t_historyofviews> t_historyofviews { get; set; }
+        public System.Data.Entity.DbSet<Data.Models.t_historyofviews> t_historyofviews { get; set; }
 
-        public System.Data.Entity.DbSet<MVCYoubay.Models.t_product> t_product { get; set; }
+        public System.Data.Entity.DbSet<Data.Models.t_product> t_product { get; set; }
 
-        public System.Data.Entity.DbSet<MVCYoubay.Models.t_orderandreview> t_orderandreview { get; set; }
+        public System.Data.Entity.DbSet<Data.Models.t_orderandreview> t_orderandreview { get; set; }
 
-        public System.Data.Entity.DbSet<MVCYoubay.Models.t_producthistory> t_producthistory { get; set; }
+        public System.Data.Entity.DbSet<Data.Models.t_producthistory> t_producthistory { get; set; }
 
-        public System.Data.Entity.DbSet<MVCYoubay.Models.t_specialpromotion> t_specialpromotion { get; set; }
+        public System.Data.Entity.DbSet<Data.Models.t_specialpromotion> t_specialpromotion { get; set; }
 
-        public System.Data.Entity.DbSet<MVCYoubay.Models.t_subcategory> t_subcategory { get; set; }
+        public System.Data.Entity.DbSet<Data.Models.t_subcategory> t_subcategory { get; set; }
 
-        public System.Data.Entity.DbSet<MVCYoubay.Models.t_user> t_user { get; set; }
+        public System.Data.Entity.DbSet<Data.Models.t_user> t_user { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace MVCYoubay.Models.Mapping
+namespace Data.Models.Mapping
 {
     public class t_assistantitemsMap : EntityTypeConfiguration<t_assistantitems>
     {

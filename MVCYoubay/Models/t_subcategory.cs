@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace MVCYoubay.Models
+namespace Data.Models
 {
     public partial class t_subcategory
     {
